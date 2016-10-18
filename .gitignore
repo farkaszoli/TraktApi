@@ -1,0 +1,14 @@
+/target/
+.project
+.classpath
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.m2e.core.prefs
+.settings/org.eclipse.core.resources.prefs
+/bin/
+.settings/org.eclipse.wst.common.project.facet.core.xml
+gson-2.3.1.jar
+lib/gson-2.3.1.jar
+src/main/resources/application.properties
+test-output/
+lib/
+!.xml
