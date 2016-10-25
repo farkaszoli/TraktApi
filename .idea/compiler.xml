@@ -25,5 +25,8 @@
         <module name="Trakt" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Trakt" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
