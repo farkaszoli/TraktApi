@@ -1,20 +1,17 @@
 package com.domain.domainMapper;
 
 import com.example.api.model.TraktIds;
-import com.example.domain.domainMapper.AttributesToQueryMapper;
+import com.example.domain.domainMapper.ModelAttributesToQueryMapper;
 import com.example.domain.modelAttributes.Episode;
 import com.example.domain.modelQuery.EpisodeQuery;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Test(groups = { "unit" })
-public class AttributesToQueryMapperTest
+public class ModelAttributesToQueryMapperTest
 {
-    private AttributesToQueryMapper attributesToQueryMapper;
+    private ModelAttributesToQueryMapper modelAttributesToQueryMapper;
     private TraktIds trackId = givenATraktId();
     private EpisodeQuery expectedChuck;
     private Episode chuck;
@@ -22,7 +19,7 @@ public class AttributesToQueryMapperTest
     @BeforeTest
     public void init()
     {
-        attributesToQueryMapper = new AttributesToQueryMapper();
+        modelAttributesToQueryMapper = new ModelAttributesToQueryMapper();
     }
 
     @Test
@@ -53,7 +50,7 @@ public class AttributesToQueryMapperTest
 
     private void whenMapCalled()
     {
-        expectedChuck = attributesToQueryMapper.mapAttributesEpisodeToEpisodeQuery(chuck);
+        expectedChuck = modelAttributesToQueryMapper.mapAttributesEpisodeToEpisodeQuery(chuck);
     }
 
     private void thenEpisodeShouldBeMap()
