@@ -1,4 +1,4 @@
-package com.example.domain.model;
+package com.example.domain.modelAttributes;
 
 import com.example.api.model.TraktIds;
 

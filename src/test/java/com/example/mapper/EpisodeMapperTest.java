@@ -2,7 +2,7 @@ package com.example.mapper;
 
 import com.example.api.model.TraktEpisode;
 import com.example.api.model.TraktIds;
-import com.example.domain.model.Episode;
+import com.example.domain.modelAttributes.Episode;
 import com.example.orchestration.mapper.EpisodeMapper;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;

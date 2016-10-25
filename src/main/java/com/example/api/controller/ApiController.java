@@ -1,10 +1,10 @@
 package com.example.api.controller;
 
 import com.example.domain.Service;
-import com.example.domain.model.Episode;
-import com.example.domain.model.EpisodeId;
-import com.example.domain.model.Season;
-import com.example.domain.model.Series;
+import com.example.domain.modelAttributes.Episode;
+import com.example.domain.modelAttributes.EpisodeId;
+import com.example.domain.modelAttributes.Season;
+import com.example.domain.modelAttributes.Series;
 import com.example.orchestration.mapper.EpisodeMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

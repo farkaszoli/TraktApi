@@ -2,19 +2,15 @@ package com.example.orchestration.mapper;
 
 import com.example.api.model.TraktEpisode;
 import com.example.api.model.TraktIds;
-import com.example.domain.model.Episode;
+import com.example.domain.modelAttributes.Episode;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Component
-public class EpisodeMapper
-{
-    //TODOD: java8 with optional
-    // TODO: domainen belul mappeles, use attributes, request,
-    // TODO: unit tests
+public class EpisodeMapper {
 
     public Episode mapTraktEpisodeToEpisode(TraktEpisode traktEpisode)
     {
@@ -27,17 +23,11 @@ public class EpisodeMapper
         return new Episode(season, number, title, link, ids);
     }
 
-    // TODO: with stream
     public List<Episode> mapList(List<TraktEpisode> traktEpisodeList)
     {
-        List<Episode> episodeList = new ArrayList<>();
-
-        for (TraktEpisode traktEpisode : traktEpisodeList)
-        {
-            Episode episode = mapTraktEpisodeToEpisode(traktEpisode);
-            episodeList.add(episode);
-        }
-
-        return episodeList;
+        return traktEpisodeList
+                .stream()
+                .map(traktEpisode -> mapTraktEpisodeToEpisode(traktEpisode))
+                .collect(Collectors.toList());
     }
 }

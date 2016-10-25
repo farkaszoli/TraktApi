@@ -2,9 +2,9 @@ package com.utils.mockbuilders;
 
 import com.example.api.model.TraktEpisode;
 import com.example.domain.Service;
-import com.example.domain.model.EpisodeId;
-import com.example.domain.model.Season;
-import com.example.domain.model.Series;
+import com.example.domain.modelAttributes.EpisodeId;
+import com.example.domain.modelAttributes.Season;
+import com.example.domain.modelAttributes.Series;
 import org.easymock.EasyMock;
 
 import java.util.List;

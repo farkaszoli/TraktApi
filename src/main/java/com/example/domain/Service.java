@@ -1,9 +1,9 @@
 package com.example.domain;
 
 import com.example.api.model.TraktEpisode;
-import com.example.domain.model.EpisodeId;
-import com.example.domain.model.Season;
-import com.example.domain.model.Series;
+import com.example.domain.modelAttributes.EpisodeId;
+import com.example.domain.modelAttributes.Season;
+import com.example.domain.modelAttributes.Series;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.apache.http.client.methods.CloseableHttpResponse;
